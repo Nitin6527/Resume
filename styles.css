@@ -120,12 +120,6 @@
   padding: 0 0 30%;
   }
 
-  @media (max-width: 900px) {
-      button {
-          width: 20%;
-      }
-  }
-
 .btn:hover{
   transform:scale(1.1);
 
@@ -251,6 +245,11 @@ body, html {
   top: 0;
   left: 0;
   z-index: -1;
+}
+@media (min-width: 320px) and (max-width:480px) {
+    button {
+        width: 20%;
+    }
 }
 
 /*====skillbar=====*/
