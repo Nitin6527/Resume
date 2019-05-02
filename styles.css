@@ -1,3 +1,9 @@
+@media (max-width: 900px) {
+    .generate-sections-container.enable-parallax {
+        background-position: center top !important;
+    }
+}
+
 /* mainbody */
 .mainbody {
   font-family: 'Kodchasan', sans-serif;
@@ -71,6 +77,7 @@
 
 .sidenav a:hover {
   color: #a1dd70;
+  z-index: 2;
   text-decoration: none !important;
 }
 
