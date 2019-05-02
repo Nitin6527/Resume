@@ -121,7 +121,7 @@
   }
 
   @media (max-width: 900px) {
-      .btn {
+      button {
           width: 20%;
       }
   }
