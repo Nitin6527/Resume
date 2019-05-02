@@ -1,9 +1,3 @@
-@media (max-width: 900px) {
-    .generate-sections-container.enable-parallax1 {
-        background-position: center top !important;
-    }
-}
-
 /* mainbody */
 .mainbody {
   font-family: 'Kodchasan', sans-serif;
@@ -117,11 +111,19 @@
   color: #a1dd70;
 }
 
+
+
 .btn {
 
   width: 20%;
   margin-top: 10%;
-  padding: 0 0 40%;
+  padding: 0 0 30%;
+  }
+
+  @media (max-width: 900px) {
+      .btn {
+          width: 20%;
+      }
   }
 
 .btn:hover{
