@@ -64,10 +64,7 @@
   display: block;
   transition: 0.3s;
 }
-.btn a:hover{
-  text-decoration: none;
-  color: #fdfff0;;
-}
+
 
 .sidenav a:hover {
   color: #a1dd70;
@@ -111,18 +108,24 @@
   color: #a1dd70;
 }
 
-
-
-.btn {
-
+.ebtn{
+  background-color: #a1dd70;
+  border-radius: 8px;
+  text-align: center;
+  border:none;
   width: 20%;
-  margin-top: 10%;
-  padding: 0 0 30%;
-  }
+  height: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 80px;
+}
 
-.btn:hover{
+.ebtn a:hover{
+  text-decoration: none;
+  color: #fdfff0;;
+}
+.ebtn:hover{
   transform:scale(1.1);
-
 }
 
 .buttons button {
@@ -248,10 +251,6 @@ body, html {
 }
 
 @media screen and (min-width: 320px) and (max-width:480px) {
-    button {
-        width: 25%;
-
-    }
     .mainbody{
       background-image: url("https://i1.wp.com/gonegosyo.impactinstrument.com/wp-content/uploads/sites/6729/2018/11/Website-background-1-1.jpg");
     }
