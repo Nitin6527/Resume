@@ -118,13 +118,14 @@
 }
 
 .btn {
-  width: 15%;
+
+  width: 20%;
   margin-top: 10%;
   padding: 0 0 40%;
   }
 
 .btn:hover{
-  transform:scale(1.5);
+  transform:scale(1.1);
 
 }
 
