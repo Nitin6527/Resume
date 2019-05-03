@@ -2,6 +2,7 @@
 .mainbody {
   font-family: 'Kodchasan', sans-serif;
   background-image: url("https://www.mayawebsolutions.com/img/slides/sliders1.jpg");
+  z-index:-1;
 }
 
 /*====Headings=====*/
@@ -47,7 +48,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #111;
@@ -63,6 +64,7 @@
   color: #fdfff0;
   display: block;
   transition: 0.3s;
+  z-index: 2;
 }
 
 
@@ -78,6 +80,7 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  z-index: 2;
 }
 
 #main {
@@ -103,6 +106,7 @@
   cursor: pointer;
   color: #fdfff0;
   padding: 2% 5%;
+  z-index: 2;
 }
 .hamnav:hover{
   color: #a1dd70;
@@ -139,7 +143,7 @@ body, html {
 /*=====parallax======*/
 .parallax1 {
   /* The image used */
-  background-image: url("https://wallpaperbro.com/img/72687.jpg");
+  background-image: url("https://www.vaysinfotech.com/wp-content/uploads/2017/01/testimonial-background.jpg");
   /* Full height */
   height: 50%;
   /* Create the parallax scrolling effect */
@@ -150,7 +154,7 @@ body, html {
 }
 .parallax2 {
   /* The image used */
-  background-image: url("https://wallpaperbro.com/img/72687.jpg");
+  background-image: url("https://www.vaysinfotech.com/wp-content/uploads/2017/01/testimonial-background.jpg");
   /* Full height */
   height: 100%;
   /* Create the parallax scrolling effect */
@@ -192,6 +196,28 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax6 {
+  /* The image used */
+  background-image: url("https://www.connectinternetsolutions.com/wp-content/uploads/2016/02/12-Courses-for-Starting-Your-Web-Development-Journey.jpg");
+  /* Full height */
+  height: 50%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax7 {
+  /* The image used */
+  background-image: url("https://hostbangla.com/wp-content/uploads/2016/12/website-design-background.png");
+  /* Full height */
+  height: 50%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #About .about{
   position: absolute;
@@ -202,6 +228,7 @@ body, html {
   height: 50%;
   padding: 5%;
   width: 100%;
+  z-index: 1;
 }
 #Projects .projects{
   position: absolute;
@@ -212,6 +239,19 @@ body, html {
   height: 50%;
   padding: 5%;
   width: 100%;
+  z-index: 1;
+
+}
+#contact .contact{
+  position: absolute;
+  text-align: center;
+ background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #dee0d9;
+  height: 50%;
+  padding: 5%;
+  width: 100%;
+  z-index:1;
 
 }
 
@@ -251,6 +291,9 @@ body, html {
 }
 
 @media screen and (min-width: 320px) and (max-width:480px) {
+  .parallax1 {
+    background-attachment: inherit;
+  }
   .ebtn{
     width: 40%;
   }
@@ -264,3 +307,60 @@ body, html {
 }
 
 /*====skillbar=====*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+#skillset
+ {
+  background: #2b2726;
+  font-family: 'Open Sans', sans-serif;
+  height: 140%;
+}
+.my-skills{
+  color: #dee0d9;
+  padding: 10% 0 5%;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #db3a34;
+}
+
+.bar {
+  width: 90%;
+  height: 20px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transition: all 2s linear;
+}
+
+.bar-1,
+.my-skills {
+  width: 80%;
+  margin: 10px auto 25px;
+}
+
+.bar-inner {
+  width: 0;
+  height: 20px;
+  line-height: 35px;
+  background: #db3a34;
+  border-radius: 5px 0 0 5px;
+}
+
+.bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 10px;
+}
+
+
+.copyright{
+  margin-top: 10%;
+}
