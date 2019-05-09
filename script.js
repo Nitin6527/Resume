@@ -1,4 +1,3 @@
-
 //===script for navbar.....
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -35,8 +34,8 @@ $(document).ready(function() {
 });
 
 
+// When the user scrolls down 20px from the top of the document, show the button..
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction()
 };
@@ -159,12 +158,14 @@ function Circle() {
 
 // ==script for skill bar.......
 $(document).ready(function() {
-  $('.anchortags').click(function(){
-    $('.bar-inner').css({'width':'0'});
-  $(".bar").each(function() {
-    $(this).find(".bar-inner").animate({
-      width: $(this).attr("data-width")
-    }, 3000)
-  });
+  $('.anchortags').click(function() {
+    $('.bar-inner').css({
+      'width': '0'
+    });
+    $(".bar").each(function() {
+      $(this).find(".bar-inner").animate({
+        width: $(this).attr("data-width")
+      }, 3000)
+    });
   });
 });
