@@ -1,3 +1,79 @@
+// Set canvas params
+const backgroundColor = "#17202A";
+
+let width = window.innerWidth;
+let height = window.innerHeight;
+
+const canvas = document.createElement('canvas');
+canvas.width = width;
+canvas.height = height;
+document.body.appendChild(canvas);
+
+const ctx = canvas.getContext('2d');
+
+// Set figure params
+let radius = 13;
+let speed = 1;
+let length = 20;
+let sX = width/2;
+let sY = height/2;
+let p1 = [sX-length, sY-length];
+let p2 = [sX+length, sY-length];
+let p3 = [sX-length, sY+length];
+let p4 = [sX+length, sY+length];
+
+function drawCircle(x, y, radius, color) {
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, 2 * Math.PI);
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.stroke();
+} // drawCircle
+
+function updateCanvas(timestamp) {
+  // Clear canvas
+  ctx.clearRect(0, 0, width, height);
+  ctx.fillStyle = backgroundColor;
+  ctx.fillRect(0, 0, width, height);
+
+  // Draw circles
+  // Shuffle circles draw order for more effect
+  if (speed > 0) {
+    drawCircle(p1[0], p1[1], radius, "yellow");
+    drawCircle(p2[0], p2[1], radius, "blue");
+    drawCircle(p3[0], p3[1], radius, "green");
+    drawCircle(p4[0], p4[1], radius, "red");
+  } else {
+    drawCircle(p4[0], p4[1], radius, "red");
+    drawCircle(p3[0], p3[1], radius, "green");
+    drawCircle(p2[0], p2[1], radius, "blue");
+    drawCircle(p1[0], p1[1], radius, "yellow");
+  }
+
+  // Calculate next circle position
+  p1[0] += speed;
+  p1[1] += speed;
+
+  p2[0] -= speed;
+  p2[1] += speed;
+
+  p3[0] += speed;
+  p3[1] -= speed;
+
+  p4[0] -= speed;
+  p4[1] -= speed;
+
+  // Change direction
+  if (p1[0] - sX >= length) speed = -speed;
+  if (sX - p1[0] >= length) speed = -speed;
+
+  window.requestAnimationFrame(updateCanvas);
+}; // updateCanvas()
+
+window.requestAnimationFrame(updateCanvas);
+
+
 //===script for navbar.....
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
