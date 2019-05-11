@@ -1,3 +1,14 @@
+/*End of all functions*/
+	//Preloader
+	$(window).on("load", function() {
+		preloaderFadeOutTime = 1000;
+		function hidePreloader() {
+		var preloader = $('#preloader');
+		preloader.fadeOut(preloaderFadeOutTime);}
+		hidePreloader();
+	});
+
+
 //===script for navbar.....
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
