@@ -20,6 +20,12 @@ function closeNav() {
 
 //===smooth scrolling.....
 $(document).ready(function() {
+	$("#container").click(function(){
+	 $("#mySidenav").show();
+ });
+ $("#main,#About,#skillset,#Projects,#contactpage,.parallax6,.parallax2,.parallax1,.parallax3,.parallax4,.parallax5").click(function(){
+	closeNav();
+ });
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -177,6 +183,10 @@ $(document).ready(function() {
       $(this).find(".bar-inner").animate({
         width: $(this).attr("data-width")
       }, 3000)
-    });
-  });
+		});
+		  });
+		$("#skillset").click(function(){
+			$(this).find(".bar-inner").animate({width:
+				$(this).attr("data-width")},2000)
+			});
 });
