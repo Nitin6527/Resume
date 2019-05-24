@@ -23,7 +23,7 @@ $(document).ready(function() {
 	$("#container").click(function(){
 	 $("#mySidenav").show();
  });
- $("#main,#About,#skillset,#Projects,#contactpage,.parallax6,.parallax2,.parallax1,.parallax3,.parallax4,.parallax5").swipeup(function(){
+ $("#main,#About,#skillset,#Projects,#contactpage,.parallax6,.parallax2,.parallax1,.parallax3,.parallax4,.parallax5").click(function(){
 	closeNav();
  });
   // Add smooth scrolling to all links
