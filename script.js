@@ -185,8 +185,14 @@ $(document).ready(function() {
       }, 3000)
 		});
 		  });
-		$("#skillset").click(function(){
-			$(this).find(".bar-inner").animate({width:
-				$(this).attr("data-width")},2000)
-			});
+});
+
+$(document).ready(function(){
+	$('#skillset').hover(function(){
+		$('.bar').each(function(){
+			$(this).find(".bar-inner").animate({
+				width:$(this).attr("data-width")
+			},3000)
+		});
+	});
 });
