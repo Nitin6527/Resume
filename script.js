@@ -182,7 +182,7 @@ $(document).ready(function() {
     $(".bar").each(function() {
       $(this).find(".bar-inner").animate({
         width: $(this).attr("data-width")
-      }, 1000)
+      }, 2000)
 		});
 		  });
 });
@@ -192,7 +192,7 @@ $(document).ready(function(){
 		$('.bar').each(function(){
 			$(this).find(".bar-inner").animate({
 				width:$(this).attr("data-width")
-			},1000)
+			},2000)
 		});
 	});
 });
